@@ -2,11 +2,8 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import N1
-import SK1
-import MG1
-
-
 homeUI = uic.loadUiType("H:\das Projekt auf V3.6\GUI\Inlove.ui")[0]
+
 class InLove(QDialog, homeUI):
     def __init__(self):
         super().__init__()
@@ -14,21 +11,23 @@ class InLove(QDialog, homeUI):
 
     #@pyqtSlot
     def N1_click_open(self):
-        self.n1open = N1.N1Dialog(self)
-        self.n1open.show()
+        self.N1open = N1(self)
+        self.N1open.show()
         self.close()
 
-    def SK1_click_open(self):
-        self.sk1open = SK1.SK1Dialog(self)
-        self.sk1open.show()
-        self.close()
+N1UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N1.ui")[0]
 
-    def always_fun(self):
-        self.mg1open = MG1.MG1Dialog(self)
-        self.mg1open.show()
-        self.close()
+class N1(QDialog,N1UI):
+    def __init__(self, value, parent=None):
+        super().__init__(parent)
+        self.setupUi(self)
 
-
+    def n2_1(self):
+        pass
+    def n2_2(self):
+        pass
+    def n2_3(self):
+        pass
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@ import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import N2_3
+import N1_1nameMODIFY
 
 N1UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N1.ui")[0]
 class N1Dialog(QDialog,N1UI):
@@ -19,7 +20,16 @@ class N1Dialog(QDialog,N1UI):
         self.N2_3open.show()
         self.close()
 
+    def N1_1nameMODIFY_click_open(self):
+        self.n1_nameMODIFYopen = N1_1nameMODIFY.N1_nameMODIFY_Dialog(self)
+        self.n1_nameMODIFYopen.show()
+        self.close()
 
+    def N1_2nameMODIFY_click_open(self):
+        pass
+
+    def N1_3nameMODIFY_click_open(self):
+        pass
 
 # if __name__ == "__main__":
 #     app = QApplication(sys.argv)

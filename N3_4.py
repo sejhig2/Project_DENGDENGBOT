@@ -10,6 +10,7 @@ class N3_4Dialog(QDialog, N3_4UI):
     def __init__(self,value, parent=None):
         super().__init__(parent)
         self.setupUi(self)
+        #self.label_12.setText("안녕하세요.")
 
     def nachHause_click_open(self):
         self.inLoveopen = inlove.InLove()
