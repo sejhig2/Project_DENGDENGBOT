@@ -136,5 +136,7 @@ class speech():
             print("내일 오전 상태: " + tomorrowMState)
             print("내일 오후 온도: " + tomorrowAfter)
             print("내일 오후 상태: " + tomorrowAState)
+            global testText
+            testText = "testTEXT"
             announcement = ("안녕하세요 " + LocationInfo + " 날씨를 알려드릴게요." + "현재온도는" + NowTemp + "도 이고 체감 온도는" + TodayFeelTemp + "에요." + sagen)
             speak.speak(announcement)

@@ -1,14 +1,32 @@
 import sys
+import pymysql
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import N2_3
 import N1_1nameMODIFY
-
+conn = pymysql.connect(host='127.0.0.1', user='root', password='1234', db='projekt2', charset='utf8')
 N1UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N1.ui")[0]
 class N1Dialog(QDialog,N1UI):
     def __init__(self, value, parent=None):
         super().__init__(parent)
         self.setupUi(self)
+
+        # SQL 커서 생성
+        cur = conn.cursor()
+        # 조회하기
+        cur.execute("SELECT name FROM family where id = 'n11' ")
+        text_edit1 = cur.fetchone()[0]
+        self.label_1.setText(text_edit1)
+
+        cur.execute("SELECT name FROM family where id = 'n12' ")
+        text_edit2 = cur.fetchone()[0]
+        self.label_2.setText(text_edit2)
+
+        cur.execute("SELECT name FROM family where id = 'n13' ")
+        text_edit3 = cur.fetchone()[0]
+        self.label_3.setText(text_edit3)
+
+
 
     def n2_1_click_open(self):
         pass

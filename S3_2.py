@@ -13,6 +13,9 @@ class S3_2Dialog(QDialog,S3_2UI):
     def bitteWetter(self):
         wettersagen = wt.speech()
         wettersagen
+        #self.textEdit_1.setText("안녕하세요 " + wettersagen.testText + " 날씨를 알려드릴게요.")
+
+
 
     def nachHause_click_open(self):
         self.inLoveopen = inlove.InLove()
