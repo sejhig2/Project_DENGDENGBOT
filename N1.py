@@ -3,7 +3,7 @@ import Auth_SQL
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import N2_3
-import N1_1nameMODIFY,N1_2nameMODIFY, N1_3nameMODIFY
+import N1_AnameMODIFY,N1_BnameMODIFY, N1_CnameMODIFY
 
 N1UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N1.ui")[0]
 class N1Dialog(QDialog,N1UI):
@@ -11,23 +11,21 @@ class N1Dialog(QDialog,N1UI):
         super().__init__(parent)
         self.setupUi(self)
 
-
-
         # 조회하기
-        Auth_SQL.cur.execute("SELECT name FROM family where id = 'n1_1' ")
+        Auth_SQL.cur.execute("SELECT name FROM family where id = 'n1_A' ")
         text_edit1 = Auth_SQL.cur.fetchone()[0]
         self.label_1.setText(text_edit1)
 
-        Auth_SQL.cur.execute("SELECT name FROM family where id = 'n1_2' ")
+        Auth_SQL.cur.execute("SELECT name FROM family where id = 'n1_B' ")
         text_edit2 = Auth_SQL.cur.fetchone()[0]
         self.label_2.setText(text_edit2)
 
-        Auth_SQL.cur.execute("SELECT name FROM family where id = 'n1_3' ")
+        Auth_SQL.cur.execute("SELECT name FROM family where id = 'n1_C' ")
         text_edit3 = Auth_SQL.cur.fetchone()[0]
         self.label_3.setText(text_edit3)
 
 
-
+    #페이지 넘기기
     def n2_1_click_open(self):
         pass
     def n2_2_click_open(self):
@@ -36,22 +34,24 @@ class N1Dialog(QDialog,N1UI):
     def n2_3_click_open(self):
         self.N2_3open = N2_3.N2_3Dialog(self)
         self.N2_3open.show()
-    #Auth_SQL.conn.close() # SQL 닫으면 안 된다. 3시간 뺑이쳤다.
         self.close()
 
-    def N1_1nameMODIFY_click_open(self):
-        self.n1_1nameMODIFYopen = N1_1nameMODIFY.N1_1nameMODIFY_Dialog(self)
-        self.n1_1nameMODIFYopen.show()
+    # 이름바꾸기 첫번째
+    def N1_AnameMODIFY_click_open(self):
+        self.n1_AnameMODIFYopen = N1_AnameMODIFY.N1_AnameMODIFY_Dialog(self)
+        self.n1_AnameMODIFYopen.show()
         self.close()
 
-    def N1_2nameMODIFY_click_open(self):
-        self.n1_2nameMODIFYopen = N1_2nameMODIFY.N1_2nameMODIFY_Dialog(self)
-        self.n1_2nameMODIFYopen.show()
+    # 이름바꾸기 두번째
+    def N1_BnameMODIFY_click_open(self):
+        self.n1_BnameMODIFYopen = N1_BnameMODIFY.N1_BnameMODIFY_Dialog(self)
+        self.n1_BnameMODIFYopen.show()
         self.close()
 
-    def N1_3nameMODIFY_click_open(self):
-        self.n1_3nameMODIFYopen = N1_3nameMODIFY.N1_3nameMODIFY_Dialog(self)
-        self.n1_3nameMODIFYopen.show()
+    # 이름바꾸기 세번째
+    def N1_CnameMODIFY_click_open(self):
+        self.n1_CnameMODIFYopen = N1_CnameMODIFY.N1_CnameMODIFY_Dialog(self)
+        self.n1_CnameMODIFYopen.show()
         self.close()
 
 # if __name__ == "__main__":
