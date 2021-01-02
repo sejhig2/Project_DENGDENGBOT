@@ -5,8 +5,8 @@ from PyQt5 import uic
 import N1
 
 
-N1_1nameMODIFYUI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/nameMODIFY_N1_1.ui")[0]
-class N1_1nameMODIFY_Dialog(QDialog,N1_1nameMODIFYUI):
+N1_2nameMODIFYUI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/nameMODIFY_N1_2.ui")[0]
+class N1_2nameMODIFY_Dialog(QDialog,N1_2nameMODIFYUI):
     def __init__(self, value, parent=None):
         super().__init__(parent)
         self.setupUi(self)
@@ -15,10 +15,10 @@ class N1_1nameMODIFY_Dialog(QDialog,N1_1nameMODIFYUI):
 
 
 
-    def nameReturnN1_1(self):
+    def nameReturnN1_2(self):
         name_insert_SQL = self.lineEdit_1.text()
         print(name_insert_SQL)
-        sql = "UPDATE family SET name = '{0}' where id = 'n1_1' ;".format(name_insert_SQL)
+        sql = "UPDATE family SET name = '{0}' where id = 'n1_2' ;".format(name_insert_SQL)
         print(sql)
         Auth_SQL.cur.execute(sql)
         Auth_SQL.conn.commit()
@@ -33,6 +33,6 @@ class N1_1nameMODIFY_Dialog(QDialog,N1_1nameMODIFYUI):
 
 # if __name__ == "__main__":
 #     app = QApplication(sys.argv)
-#     N1D = N1_1nameMODIFY_Dialog()
+#     N1D = N1_nameMODIFY_Dialog()
 #     N1D.show()
 #     app.exec_()
