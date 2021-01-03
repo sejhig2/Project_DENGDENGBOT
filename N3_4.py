@@ -6,7 +6,7 @@ import inlove
 
 
 
-N3_4UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N3_4.ui")[0]
+N3_4UI = uic.loadUiType("C:/DengDengE/N3_4.ui")[0]
 class N3_4Dialog(QDialog, N3_4UI):
     def __init__(self,value, parent=None):
         super().__init__(parent)

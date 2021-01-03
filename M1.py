@@ -4,7 +4,7 @@ from PyQt5 import uic
 import inlove
 import M2_Yam_Yam
 
-M1UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/M1.ui")[0]
+M1UI = uic.loadUiType("C:/DengDengE/M1.ui")[0]
 class M1Dialog(QDialog,M1UI):
     def __init__(self, value, parent=None):
         super().__init__(parent)

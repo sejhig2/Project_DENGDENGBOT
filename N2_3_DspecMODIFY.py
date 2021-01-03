@@ -6,7 +6,7 @@ import N2_3_D
 import Auth_SQL
 
 
-N2_3_DsepcMODIFYUI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N2_3_DspecMODIFY.ui")[0]
+N2_3_DsepcMODIFYUI = uic.loadUiType("C:/DengDengE/N2_3_DspecMODIFY.ui")[0]
 class N2_3_DspecMODIFY_Dialog(QDialog,N2_3_DsepcMODIFYUI):
     def __init__(self, value, parent=None):
         super().__init__(parent)

@@ -5,7 +5,7 @@ import N2_3_AnameMODIFY,N2_3_BnameMODIFY,N2_3_CnameMODIFY,N2_3_DnameMODIFY
 import Auth_SQL
 import N2_3_D
 
-N2_3UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N2_3.ui")[0]
+N2_3UI = uic.loadUiType("C:/DengDengE/N2_3.ui")[0]
 class N2_3Dialog(QDialog,N2_3UI):
     def __init__(self, value, parent=None):
         super().__init__(parent)

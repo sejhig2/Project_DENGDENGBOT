@@ -6,7 +6,7 @@ import SK1
 import MG1
 
 
-homeUI = uic.loadUiType("H:\das Projekt auf V3.6\GUI\Inlove.ui")[0]
+homeUI = uic.loadUiType("C:/DengDengE/Inlove.ui")[0]
 class InLove(QDialog, homeUI):
     def __init__(self):
         super().__init__()

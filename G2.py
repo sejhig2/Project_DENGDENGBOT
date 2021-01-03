@@ -4,7 +4,7 @@ from PyQt5 import uic
 import inlove
 import os
 
-G2UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/G2.ui")[0]
+G2UI = uic.loadUiType("C:/DengDengE/G2.ui")[0]
 class G2Dialog(QDialog,G2UI):
     def __init__(self, value, parent=None):
         super().__init__(parent)

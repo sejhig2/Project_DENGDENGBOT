@@ -8,7 +8,7 @@ import webbrowser
 
 
 
-M2_Yam_YamUI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/M2_Yam_Yam.ui")[0]
+M2_Yam_YamUI = uic.loadUiType("C:/DengDengE/M2_Yam_Yam.ui")[0]
 class M2_Yam_YamDialog(QDialog, M2_Yam_YamUI):
     def __init__(self, parent=None): #value 는 어떤 역할을 하는거지?
         super().__init__(parent)

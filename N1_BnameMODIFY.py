@@ -5,7 +5,7 @@ from PyQt5 import uic
 import N1
 
 
-N1_BnameMODIFYUI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/nameMODIFY_N1_B.ui")[0]
+N1_BnameMODIFYUI = uic.loadUiType("C:/DengDengE/nameMODIFY_N1_B.ui")[0]
 class N1_BnameMODIFY_Dialog(QDialog,N1_BnameMODIFYUI):
     def __init__(self, value, parent=None):
         super().__init__(parent)

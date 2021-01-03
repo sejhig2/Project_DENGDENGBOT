@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1322</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>첫째네</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(206, 212, 106);
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>4</y>
+     <width>1267</width>
+     <height>716</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>1260</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1260</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>50</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+      </property>
+      <property name="text">
+       <string>가족 프로필</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_1">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_2">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="toolButton_4">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="btn1">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>515</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>작은 아들 사진</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn2">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>515</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>작은 며느리 사진</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn3">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>515</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>사진</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn4">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>515</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>손자5 사진</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QToolButton" name="pic1">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>사진을 바꾸기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="pic2">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>사진 바꾸기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="pic3">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>사진 바꾸기</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QToolButton" name="pic4">
+          <property name="minimumSize">
+           <size>
+            <width>310</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(7, 85, 59);
+color:rgb(206, 212, 106);
+</string>
+          </property>
+          <property name="text">
+           <string>사진 바꾸기</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn1</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>n2_1_Aclick_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>273</x>
+     <y>577</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>292</x>
+     <y>718</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>n2_1_Bclick_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>556</x>
+     <y>624</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>578</x>
+     <y>717</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn3</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>n2_1_Cclick_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>859</x>
+     <y>511</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>867</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn4</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>N2_1_DnameMODIFY_click_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1067</x>
+     <y>612</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1074</x>
+     <y>715</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>N2_1_AnameMODIFY_click_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>305</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>N2_1_BnameMODIFY_click_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>631</x>
+     <y>142</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>635</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>N2_1_CnameMODIFY_click_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>937</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>950</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>N2_1_DnameMODIFY_click_open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1242</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1219</x>
+     <y>719</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>n2_1_Aclick_open()</slot>
+  <slot>n2_1_Bclick_open()</slot>
+  <slot>n2_1_Cclick_open()</slot>
+  <slot>n2_1_Dclick_open()</slot>
+  <slot>slot1()</slot>
+  <slot>N2_1_AnameMODIFY_click_open()</slot>
+  <slot>N2_1_BnameMODIFY_click_open()</slot>
+  <slot>N2_1_CnameMODIFY_click_open()</slot>
+  <slot>N2_1_DnameMODIFY_click_open()</slot>
+ </slots>
+</ui>

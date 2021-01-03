@@ -7,7 +7,7 @@ import N2_3_DspecMODIFY
 
 
 
-N2_3_DUI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/N2_3_D.ui")[0]
+N2_3_DUI = uic.loadUiType("C:/DengDengE/N2_3_D.ui")[0]
 class N2_3_DDialog(QDialog, N2_3_DUI):
     def __init__(self,value, parent=None):
         super().__init__(parent)

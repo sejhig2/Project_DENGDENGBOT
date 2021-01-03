@@ -3,7 +3,7 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic
 import S3_2
 
-S2UI = uic.loadUiType("H:/das Projekt auf V3.6/GUI/S2.ui")[0]
+S2UI = uic.loadUiType("C:/DengDengE/S2.ui")[0]
 class S2Dialog(QDialog,S2UI):
     def __init__(self, value, parent=None):
         super().__init__(parent)
