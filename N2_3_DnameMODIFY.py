@@ -14,7 +14,6 @@ class N2_3_DnameMODIFY_Dialog(QDialog,N2_3_DnameMODIFYUI):
     #N2_3페이지의 네번째이름 바꾸기
     def nameReturnN2_3_D(self):
         name_insert_SQL = self.lineEdit_1.text()
-        print(name_insert_SQL)
         sql = "UPDATE family SET name = '{0}' where id = 'n2_3_D' ;".format(name_insert_SQL)
         print(sql)
         Auth_SQL.cur.execute(sql)
